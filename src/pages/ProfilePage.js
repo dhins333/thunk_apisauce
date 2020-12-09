@@ -1,5 +1,6 @@
 import React from 'react';
-import DockableFooter from './DockableFooter';
+
+import DockableFooter from '../components/DockableFooter';
 
 const ProfilePage = () => {
 

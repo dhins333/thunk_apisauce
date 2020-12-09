@@ -1,8 +1,8 @@
 import { createStore,compose,combineReducers,applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
 
-import loadMoreReducer from '../reducers/loadMoreReducer';
-import paginationReducer from '../reducers/paginationReducer';
+import loadMoreReducer from '../modules/loadmore/reducers/loadMoreReducer';
+import paginationReducer from '../modules/pagination/reducers/paginationReducer';
 
 const store = createStore(combineReducers({
     loadMore:loadMoreReducer,

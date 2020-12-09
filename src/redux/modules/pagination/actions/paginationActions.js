@@ -1,5 +1,5 @@
 import {PAGINATION} from '../constants/paginationConstants';
-import api from '../utils/api';
+import api from '../../../utils/api';
 
 export const paginationContent = () => {
     return async (dispatch) => {

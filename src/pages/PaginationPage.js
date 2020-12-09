@@ -1,6 +1,6 @@
 import React from 'react';
 
-import PaginationContent from './PaginationContent';
+import PaginationContent from '../components/PaginationContent';
 
 const PaginationPage = () => {
     return(

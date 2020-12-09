@@ -1,5 +1,5 @@
 import {LOADMORE} from '../constants/loadMoreConstants';
-import api from '../utils/api';
+import api from '../../../utils/api';
 
 export const loadMoreContent = (page) => {
     return(

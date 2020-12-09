@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { paginationContent,incrementPage,decrementPage } from '../actions/paginationActions';
+import { paginationContent,incrementPage,decrementPage } from '../redux/modules/pagination/actions/paginationActions';
 
 const PaginationContent = () => {
 

@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 
-import AppRouter from './AppRouter';
-import store from './store/store';
+import AppRouter from './routes/AppRouter';
+import store from './redux/store/store';
 
 import './styles/index.scss';
 

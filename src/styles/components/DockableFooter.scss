@@ -1,0 +1,42 @@
+.dockableFooter{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    position: fixed;
+    top:50%;
+    left:0;
+    background-color: black;
+    transform: translateY(-50%);
+    border-radius: 0px 10px 10px 0px;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.dockableFooter-item{
+    padding: 1rem 0px 1rem 0px;
+}
+
+.dockableFooter-item:hover{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+@media( max-width:600px ){
+    .dockableFooter{
+        height: auto;
+        max-width: none;
+        flex-direction: row;
+        top:100%;  
+        left: 0;
+        transform:translateY(-100%);
+        width: 100%;
+        border-radius: 0px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .dockableFooter-item{
+        padding: 0px;
+    }
+}

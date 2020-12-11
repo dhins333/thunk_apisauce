@@ -1,7 +1,7 @@
 import React,{ useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-
-import { loadMoreContent } from '../redux/modules/loadmore/actions/loadMoreActions';
+import { loadMoreContentThunk } from '../redux/slices/loadMore';
+// import { loadMoreContent } from '../redux/modules/loadmore/actions/loadMoreActions';
 
 const LoadMoreContent = () => {
 
@@ -15,12 +15,12 @@ const LoadMoreContent = () => {
 
     useEffect(() => {
         if(current <= 1){
-            dispatch(loadMoreContent(1));
+            dispatch(loadMoreContentThunk(1));
         }
     },[dispatch,current]);
 
     const loadMoreButton = () => {
-        dispatch(loadMoreContent(current));
+        dispatch(loadMoreContentThunk(current));
     }
     
     return(

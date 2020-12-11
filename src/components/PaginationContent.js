@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-import { paginationContent,incrementPage,decrementPage } from '../redux/modules/pagination/actions/paginationActions';
+// import { paginationContent,incrementPage,decrementPage } from '../redux/modules/pagination/actions/paginationActions';
+
+import { getPaginationContentThunk,increasePage,decreasePage } from '../redux/slices/pagination';
 
 const PaginationContent = () => {
 
@@ -13,17 +15,17 @@ const PaginationContent = () => {
 
     useEffect(() => {
         if(content.length === 0){
-            dispatch(paginationContent());
-            incrementPage(dispatch);
+            dispatch(getPaginationContentThunk());
+            dispatch(increasePage());
         }
     },[dispatch,content])
 
     const handlePageChange = (e) => {
         if(e.target.className === 'paginationNavLeft'){
-            decrementPage(dispatch);
+            dispatch(decreasePage());
         }
         else{
-            incrementPage(dispatch);
+            dispatch(increasePage());
         }
     }
 

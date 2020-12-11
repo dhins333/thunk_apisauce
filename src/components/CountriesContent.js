@@ -1,11 +1,13 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Country from './Country';
-import { getCountries } from '../redux/modules/countries/actions/countriesActions';
+// import { getCountries } from '../redux/modules/countries/actions/countriesActions';
+import { getAllCountriesThunk } from '../redux/slices/country';
 
 const CountriesContent = () => {
 
     const countriesList = useSelector((state) => {
+        console.log(state);
         return state.countries.countriesList
     })
 
@@ -13,7 +15,7 @@ const CountriesContent = () => {
 
     useEffect(() => {
         if(countriesList.length === 0){
-            dispatch(getCountries());
+            dispatch(getAllCountriesThunk());
         }
     },[dispatch,countriesList.length])
 

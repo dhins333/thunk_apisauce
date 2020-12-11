@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LoadMoreContent from '../components/LoadMoreContent';
+import LoadMoreContent from '../components/containers/LoadMoreContent';
 
 const LoadMorePage = () => {
 

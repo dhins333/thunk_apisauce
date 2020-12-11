@@ -1,5 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { gqlClient } from '../../graphql/request';
+
+import { gqlClient } from '../../graphql/utils/request';
 import { getCountries as query } from '../../graphql/queries/countries';
 
 const countrySlice = createSlice({

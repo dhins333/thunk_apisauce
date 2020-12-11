@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { gqlClient } from '../graphql/request';
-import { getCountryDetails as query } from '../graphql/queries/countryDetails';
+
+import { gqlClient } from '../../graphql/utils/request';
+import { getCountryDetails as query } from '../../graphql/queries/countryDetails';
 
 const CountryDetailsContent = ({code}) => {
 

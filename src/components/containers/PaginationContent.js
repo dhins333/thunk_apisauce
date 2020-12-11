@@ -1,9 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
-// import { paginationContent,incrementPage,decrementPage } from '../redux/modules/pagination/actions/paginationActions';
-
-import { getPaginationContentThunk,increasePage,decreasePage } from '../redux/slices/pagination';
+import { getPaginationContentThunk,increasePage,decreasePage } from '../../redux/slices/pagination';
 
 const PaginationContent = () => {
 

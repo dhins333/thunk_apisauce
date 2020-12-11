@@ -1,6 +1,7 @@
 import React from 'react';
-import CountryDetailsContent from '../components/CountryDetailsContent';
 import { withRouter } from 'react-router-dom';
+
+import CountryDetailsContent from '../components/containers/CountryDetailsContent';
 
 const CountryDetailsPage = ({match:{params:{code}}}) => {
 

@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+
 import api from '../utils/api';
 
 const paginationSlice = createSlice({

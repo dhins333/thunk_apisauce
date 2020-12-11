@@ -1,5 +1,6 @@
 import React from 'react';
-import CountriesContent from '../components/CountriesContent';
+
+import CountriesContent from '../components/containers/CountriesContent';
 
 const CountriesPage = () => {
 

@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Country from './Country';
-// import { getCountries } from '../redux/modules/countries/actions/countriesActions';
-import { getAllCountriesThunk } from '../redux/slices/country';
+
+import Country from '../dumbComponents/Country';
+import { getAllCountriesThunk } from '../../redux/slices/country';
 
 const CountriesContent = () => {
 

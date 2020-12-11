@@ -1,7 +1,7 @@
 import React,{ useEffect, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { loadMoreContentThunk } from '../redux/slices/loadMore';
-// import { loadMoreContent } from '../redux/modules/loadmore/actions/loadMoreActions';
+
+import { loadMoreContentThunk } from '../../redux/slices/loadMore';
 
 const LoadMoreContent = () => {
 

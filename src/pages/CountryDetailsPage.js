@@ -5,7 +5,6 @@ import CountryDetailsContent from '../components/containers/CountryDetailsConten
 
 const CountryDetailsPage = ({match:{params:{code}}}) => {
 
-    console.log(code);
     return (
         <div className = 'CountryDetailsPage'>
             <CountryDetailsContent code={code} />

@@ -16,9 +16,26 @@ const ProfilePage = () => {
         console.log('third');
     }
 
+    const renderItems = (children,onClickHandlers) => {
+        
+        return children.map((child,index) => {
+            return (
+            <div onClick = {onClickHandlers[index]}
+                className='dockableFooter-item'
+                key={index}>
+                {child}
+            </div>
+           );
+        })
+
+    }
+
     return(
         <div className='profilePage'>
-            <DockableFooter onClickHandlers = {[firstItemHandler,secondItemHandler,thirdItemHandler]}>
+            <DockableFooter 
+                onClickHandlers = {[firstItemHandler,secondItemHandler,thirdItemHandler]}
+                renderItems = {renderItems}
+            >
                 <i className="fas fa-address-card fa-3x"></i>
                 <i className="fas fa-address-card fa-3x"></i>
                 <i className="fas fa-address-card fa-3x"></i>

@@ -1,19 +1,26 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-const DockableFooter = ({children,onClickHandlers}) => {
+const DockableFooter = (props) => {
+
+    const {
+        children,
+        onClickHandlers,
+        renderItems
+    } = props
+
 
     return(
         <div className='dockableFooter'>
-            {children.map((child,index) => {
-                return (<div onClick = {onClickHandlers[index]}
-                            className='dockableFooter-item'
-                            key={index}>
-                            {child}
-                        </div>
-                       );
-            })}
+            {renderItems(children,onClickHandlers)}
         </div>
     )
+}
+
+DockableFooter.propTypes = {
+    children:PropTypes.array,
+    onClickHandlers:PropTypes.array,
+    renderItems:PropTypes.func
 }
 
 export default DockableFooter;

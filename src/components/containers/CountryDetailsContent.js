@@ -1,9 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import PropTypes from 'prop-types';
 
 import { gqlClient } from '../../graphql/utils/request';
 import { getCountryDetails as query } from '../../graphql/queries/countryDetails';
 
-const CountryDetailsContent = ({code}) => {
+const CountryDetailsContent = (props) => {
+
+    const {
+        code
+    } = props
 
     const [countryDetails,setCountryDetails] = useState('Loading');
 
@@ -22,6 +27,10 @@ const CountryDetailsContent = ({code}) => {
             {countryDetails}
         </div>
     )
+}
+
+CountryDetailsContent.propTypes = {
+    code:PropTypes.string
 }
 
 export default CountryDetailsContent;

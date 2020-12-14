@@ -11,7 +11,7 @@ const Country = (props) => {
 
     return(
         <div className='country'>
-            <Link to={`/country/${code}`} ><p>{name}:{code}</p></Link>
+            <Link to={`/countries/${code}`} ><p>{name}:{code}</p></Link>
         </div>
     )
 

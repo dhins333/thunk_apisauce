@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
-
 import { gqlClient } from '../../graphql/utils/request';
 import { getCountryDetails as query } from '../../graphql/queries/countryDetails';
 

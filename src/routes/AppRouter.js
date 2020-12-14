@@ -17,7 +17,7 @@ const AppRouter = () => {
             <Route path='/pagination' component={PaginationPage} exact={true}></Route>
             <Route path='/profile' component={ProfilePage} exact={true}></Route>
             <Route path='/countries' component={CountriesPage} exact={true}></Route>
-            <Route path='/country/:code' component={CountryDetailsPage} exact={true}></Route>
+            <Route path='/countries/:code' component={CountryDetailsPage} exact={true}></Route>
         </Switch>
         </BrowserRouter>
     )

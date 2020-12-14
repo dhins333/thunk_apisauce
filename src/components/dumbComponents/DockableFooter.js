@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 
 const DockableFooter = (props) => {
 
+    console.log(props);
+
     const {
         children,
         onClickHandlers,

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import DockableFooter from '../components/dumbComponents/DockableFooter';
+import BreadCrumbs from '../components/dumbComponents/BreadCrumbs';
 
 const ProfilePage = () => {
 
@@ -32,6 +33,7 @@ const ProfilePage = () => {
 
     return(
         <div className='profilePage'>
+            <BreadCrumbs></BreadCrumbs>
             <DockableFooter 
                 onClickHandlers = {[firstItemHandler,secondItemHandler,thirdItemHandler]}
                 renderItems = {renderItems}

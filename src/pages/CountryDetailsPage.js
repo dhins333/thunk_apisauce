@@ -2,12 +2,16 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 import CountryDetailsContent from '../components/containers/CountryDetailsContent';
+import BreadCrumbs from '../components/dumbComponents/BreadCrumbs';
 
-const CountryDetailsPage = ({match:{params:{code}}}) => {
+const CountryDetailsPage = (props) => {
+
+    console.log(props);
 
     return (
         <div className = 'CountryDetailsPage'>
-            <CountryDetailsContent code={code} />
+            <BreadCrumbs></BreadCrumbs>
+            <CountryDetailsContent code={props.match.params.code} />
         </div>
     )
 }

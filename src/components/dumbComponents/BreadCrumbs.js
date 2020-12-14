@@ -8,9 +8,9 @@ const BreadCrumbs = () => {
 
     const appendPath = (index) => {
         let path = '/';
-        for (var each of items.slice(0,(index + 1))){
-            path = path+each+'/';
-        }
+        items.slice(0,( index + 1 )).forEach((each) => {
+            path = `${path}${each}/`
+        })
         return (path.slice(0,-1));
     }
 
